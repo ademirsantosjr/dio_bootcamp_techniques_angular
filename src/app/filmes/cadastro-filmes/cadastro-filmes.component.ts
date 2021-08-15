@@ -8,13 +8,13 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 })
 export class CadastroFilmesComponent implements OnInit {
 
-  options: FormGroup;
+  cadastro: FormGroup;
 
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
 
-    this.options = this.fb.group({
+    this.cadastro = this.fb.group({
       hideRequired: false,
       floatLabel: 'auto',
     });

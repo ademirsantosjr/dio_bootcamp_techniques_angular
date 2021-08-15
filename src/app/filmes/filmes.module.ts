@@ -10,8 +10,7 @@ import { ListagemFilmesComponent } from './listagem-filmes/listagem-filmes.compo
   imports: [
     CommonModule,
     MaterialModule,
-    ReactiveFormsModule,
-    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [CadastroFilmesComponent, ListagemFilmesComponent]
 })

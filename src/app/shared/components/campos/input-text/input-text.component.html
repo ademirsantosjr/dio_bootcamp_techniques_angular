@@ -4,8 +4,15 @@
            [placeholder]="titulo"
            [name]="controlName"
            [formControlName]="controlName">
+
     <mat-error *ngIf="validacao.hasErrorValidar(formControl,'required')">campo obrigatório</mat-error>
-    <mat-error *ngIf="validacao.hasErrorValidar(formControl,'minlength')">mín. 2 caracteres</mat-error>
-    <mat-error *ngIf="validacao.hasErrorValidar(formControl,'maxlength')">máx. 256 carateres</mat-error>
+
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl,'minlength')">
+      mín. {{ validacao.lengthValidar(formControl, 'minlength') }} caracteres
+    </mat-error>
+
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl,'maxlength')">
+      máx. {{ validacao.lengthValidar(formControl, 'maxlength') }} carateres
+    </mat-error>
   </mat-form-field>
 </div>

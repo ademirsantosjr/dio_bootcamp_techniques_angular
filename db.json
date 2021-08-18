@@ -119,6 +119,36 @@
       "urlIMDb": "",
       "genero": "Terror",
       "id": 12
+    },
+    {
+      "titulo": "sadfsdaf",
+      "urlFoto": "",
+      "dtLancamento": "2021-08-11T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Ficção Científica",
+      "id": 13
+    },
+    {
+      "titulo": "asdfds",
+      "urlFoto": "",
+      "dtLancamento": "2021-08-04T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Ficção Científica",
+      "id": 14
+    },
+    {
+      "titulo": "teste",
+      "urlFoto": "",
+      "dtLancamento": "2021-08-04T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0.3,
+      "urlIMDb": "",
+      "genero": "Aventura",
+      "id": 15
     }
   ]
 }

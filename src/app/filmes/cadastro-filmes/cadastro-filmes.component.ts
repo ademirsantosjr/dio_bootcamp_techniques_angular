@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material';
+import { Router } from '@angular/router';
+
+import { FilmesService } from 'src/app/core/filmes.service';
+import { AlertaComponent } from 'src/app/shared/components/alerta/alerta.component';
 import { ValidarCamposService } from 'src/app/shared/components/campos/validar-campos.service';
+import { Alerta } from 'src/app/shared/models/alerta';
+import { Filme } from 'src/app/shared/models/filme';
 
 @Component({
   selector: 'dio-cadastro-filmes',
@@ -13,7 +20,10 @@ export class CadastroFilmesComponent implements OnInit {
   generos: Array<string>;
 
   constructor(public validacao: ValidarCamposService,
-              private fb: FormBuilder) { }
+              public dialog: MatDialog,
+              private fb: FormBuilder,
+              private filmeService: FilmesService,
+              private router: Router) { }
 
   get f() {
     return this.cadastro.controls;
@@ -35,16 +45,50 @@ export class CadastroFilmesComponent implements OnInit {
 
   }
 
-  salvar(): void {
+  submit(): void {
     this.cadastro.markAllAsTouched();
     if (this.cadastro.invalid) {
       return;
     }
-    alert('SUCESSO!!\n\n' + JSON.stringify(this.cadastro.value, null, 4));
+
+    const filme = this.cadastro.getRawValue() as Filme;
+    this.salvar(filme);
   }
 
   reiniciarForm(): void {
     this.cadastro.reset();
+  }
+
+  private salvar(filme: Filme): void {
+    this.filmeService.salvar(filme).subscribe(() => {
+      const config = {
+        data: {
+          btnSucesso: 'Ir para a listagem',
+          btnCancelar: 'Cadastrar um novo filme',
+          corBtnCancelar: 'primary',
+          possuirBtnFechar: true
+        } as Alerta
+      };
+      const dialogRef = this.dialog.open(AlertaComponent, config);
+      dialogRef.afterClosed().subscribe((opcao: boolean) => {
+        if (opcao) {
+          this.router.navigateByUrl('filmes');
+        } else {
+          this.reiniciarForm();
+        }
+      });
+    },
+    () => {
+      const config = {
+        data: {
+          titulo: 'Erro ao salvar o registro',
+          descricao: 'Não conseguimos salvar seu registro. Tente novamente mais tarte.',
+          corBtnSucesso: 'warn',
+          btnSucesso: 'Fechar',
+        } as Alerta
+      };
+      this.dialog.open(AlertaComponent, config);
+    });    
   }
 
 }

@@ -112,103 +112,13 @@
     },
     {
       "titulo": "What We Do in the Shadows",
-      "urlFoto": "https://www.imdb.com/title/tt7908628/mediaviewer/rm2848915201/?ref_=ext_shr_lnk",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BYzZhZWVkNzYtZjZmOS00MTE1LWFkZTQtYzViYWU0MDU3MDIxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
       "dtLancamento": "2021-08-04T03:00:00.000Z",
       "descricao": "A look into the daily (or rather, nightly) lives of three vampires, who've lived together for over 100 years, on Staten Island.",
       "nota": 8.5,
       "urlIMDb": "",
       "genero": "Terror",
       "id": 12
-    },
-    {
-      "titulo": "sadfsdaf",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-11T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 13
-    },
-    {
-      "titulo": "asdfds",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-04T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 14
-    },
-    {
-      "titulo": "teste",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-04T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0.3,
-      "urlIMDb": "",
-      "genero": "Aventura",
-      "id": 15
-    },
-    {
-      "titulo": "teste",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-04T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 16
-    },
-    {
-      "titulo": "asdf",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-03T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 17
-    },
-    {
-      "titulo": "sdf",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-11T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 18
-    },
-    {
-      "titulo": "kjhkjh",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-04T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Aventura",
-      "id": 19
-    },
-    {
-      "titulo": "teste",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-03T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 20
-    },
-    {
-      "titulo": "teste",
-      "urlFoto": "",
-      "dtLancamento": "2021-08-10T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Romance",
-      "id": 21
     }
   ]
 }

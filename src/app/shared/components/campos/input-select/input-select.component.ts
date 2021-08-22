@@ -1,3 +1,4 @@
+
 import { Component, Input } from '@angular/core';
 import { FormGroup, AbstractControl } from '@angular/forms';
 import { ValidarCamposService } from '../validar-campos.service';
@@ -19,5 +20,4 @@ export class InputSelectComponent {
   get formControl(): AbstractControl {
     return this.formGroup.controls[this.controlName];
   }
-
 }

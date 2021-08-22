@@ -82,7 +82,7 @@ export class CadastroFilmesComponent implements OnInit {
       const config = {
         data: {
           titulo: 'Erro ao salvar o registro',
-          descricao: 'Não conseguimos salvar seu registro. Tente novamente mais tarte.',
+          descricao: 'Não conseguimos salvar o seu registro. Tente novamente mais tarte.',
           corBtnSucesso: 'warn',
           btnSucesso: 'Fechar',
         } as Alerta
